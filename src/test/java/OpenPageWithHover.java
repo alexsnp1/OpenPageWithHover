@@ -11,8 +11,7 @@ public class OpenPageWithHover {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1600x900";
-        Configuration.pageLoadStrategy = "eager"; //при долгой загрузке не падает тест
-        Configuration.holdBrowserOpen = true; //не закрывается браузер
+        Configuration.pageLoadStrategy = "eager";
     }
     @Test
     void openPageWithHover() {
